@@ -67,14 +67,13 @@ _This implementation is correct, because we used intersection and we provided al
 ```javascript
 // Wrong Implementation:
 const registeredUser2: RegisteredUser = {
-    id: "abc123",
-    name: "John Doe",
-    username: "johndoe",
-}
-Error: Must have all the properties(id, name, username, password), here password is missing.
+  id: "abc123",
+  name: "John Doe",
+  username: "johndoe",
+};
 ```
 
-_This implementation is not correct, because we used intersection and we didn't provide all the properties here._
+_Error: Must have all the properties(id, name, username, password), here password is missing.We used intersection and we didn't provide all the properties here._
 
 #### Conclusion:
 
